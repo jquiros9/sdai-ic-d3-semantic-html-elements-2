@@ -5,6 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Simple Web Page</title>
+
+    <style>
+        .button-list {
+            list-style-type: none; /* Remove default list styling */
+            padding: 0; /* Remove default padding */
+            display: flex; /* Use flexbox for horizontal layout */
+        }
+
+        .button-list li {
+            margin-right: 10px; /* Space between buttons */
+        }
+
+        .button-list a {
+            display: inline-block; /* Allow padding and margin */
+            padding: 10px 15px; /* Add padding to buttons */
+            background-color: #007BFF; /* Button background color */
+            color: white; /* Text color */
+            text-decoration: none; /* Remove underline */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+
+        .button-list a:hover {
+            background-color: #0056b3; /* Darker background on hover */
+        }
+    </style>
 </head>
 
 <body>
@@ -32,10 +58,22 @@
             </p>
 
             <p>Connect with me on social media</p>
-            <ul>
+            <ul class="button-list">
                 <li><a href="#">X</a></li>
                 <li><a href="#">LinkedIn</a></li>
                 <li><a href="#">GitHub</a></li>
+            </ul>
+        </section>
+
+        
+
+        <section>
+            <h2>Recent Projects</h2>
+            <p>Check out some of my recent work:</p>
+            <ul class="button-list">
+                <li><a href="#">Portfolio Website</a></li>
+                <li><a href="#">E-commerce Site</a></li>
+                <li><a href="#">Blog Platform</a></li>
             </ul>
         </section>
     </main>
